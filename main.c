@@ -37,7 +37,7 @@ int main()
 
         if (GetModuleFileNameEx(Proces, 0, SciezkaProcesu, &Rozmiar2)) {
             WCHAR* NazwaProcesu = wcsrchr(SciezkaProcesu, L'\\') + 1;
-            if (wcscmp(L"PolandMT2.exe", NazwaProcesu)) {
+            if (wcscmp(L"Example.exe", NazwaProcesu)) {
                 CloseHandle(Proces);
                 continue;
             }
